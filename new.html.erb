@@ -1,0 +1,20 @@
+<div class="main users-new">
+  <div class="container">
+    <div class="form-heading">新規投稿</div>
+    <div class="form users-form">
+      <div class="form-body">
+        <%= form_tag("/post/create") do %>
+          <p>投稿</p>
+          <textarea name="content" rows="8" cols="80" placeholder="～みたいなアプリあればいいのにな"></textarea>
+          <input name="tag" placeholder="#恋愛　#勉強">
+          <p>きっかけ</p>
+          <textarea name="cue" rows="8" cols="60" placeholder="授業中におもいついた"></textarea>
+          <input type="submit" value="投稿">
+        <% end %>
+        <div class="form-footer">
+          <p>アイコン</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
